@@ -1,0 +1,25 @@
+.nava {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.navli {
+    float: right;
+}
+.navitem {
+    display: inline;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+    max-width: 5rem;
+    min-width: 5rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+
+.navhome {
+    display: flex;
+    padding-left: 46%;
+    padding-right: 48%;
+    font-family: 'DM Serif Display', serif;
+}
