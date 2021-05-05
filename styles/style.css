@@ -88,3 +88,14 @@ span:hover:after {
     width: 100%;
     transition: 0s;
 }
+
+/* Homepage title styling */
+
+.hometitle {
+    display: flex;
+    font-family: 'DM Serif Display', serif;
+    font-size: 200pt;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: inline-block;
+}
