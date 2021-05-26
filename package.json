@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Keru-A/web1-assign/issues"
   },
-  "homepage": "https://github.com/Keru-A/web1-assign#readme"
+  "homepage": "https://github.com/Keru-A/web1-assign#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
