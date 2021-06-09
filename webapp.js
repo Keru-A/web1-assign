@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
-const port = 3000
+const PORT = process.env.PORT || 3000;
+
 const path = require('path');
 
 app.set("view engine","ejs");
@@ -12,8 +13,6 @@ app.use(express.static(__dirname + '/views'));
 // index page
 app.get('/', function(req, res) {
     res.render('pages/index');
-    res.render('assets/styles/')
-    res.render('assets/scripts/')
   });
   
   // about page
@@ -29,5 +28,6 @@ app.get('/', function(req, res) {
     res.render('pages/projects');
   });
 
-app.listen(3000);
-console.log('Server is listening on port 3000');
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
