@@ -94,7 +94,7 @@ span:hover:after {
 .hometitle {
     display: flex;
     font-family: 'DM Serif Display', serif;
-    font-size: 200pt;
+    font-size: 17rem;
     padding-left: 3%;
     padding-right: 3%;
     display: inline-block;
