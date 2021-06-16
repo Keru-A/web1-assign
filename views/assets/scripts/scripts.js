@@ -1,4 +1,6 @@
-fetch ('https://api.unsplash.com/photos/aI3EBLvcyu4?client_id=I3qdnpZXWiIkcwPOmvVcZ9yWwdepIH36eEonzKTA3ug')
+// fetch image for homepage from unsplash api
+
+fetch ('https://api.unsplash.com/photos/z7rcwqCi77s?client_id=I3qdnpZXWiIkcwPOmvVcZ9yWwdepIH36eEonzKTA3ug')
     .then(res => {
         return res.json();
     })

@@ -1,24 +1,37 @@
-/* nav bar styling */
-
-.nava {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 20pt;
-    padding-right: 25%;
+body {
+    margin: 0;
 }
+
+/* nav bar styling */
 
 .navbar {
     display: flex;
+    justify-content: space-between;
     padding-top: 2rem;
+    z-index: 1;
+}
+
+.nava {
+    display: flex;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20pt;
+    color: rgb(247, 247, 239);
+    padding-top: 0%;
+    padding-left: 5%;
+    z-index: 1;
 }
 
 .navli {
-    float: right;
+    display: flex;
+    justify-items: right;
+    padding-right: 5%;
+    z-index: 1;
 }
 
 .navitem {
-    display: inline;
+    display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: space-around;
     max-width: 5rem;
     min-width: 5rem;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -27,10 +40,10 @@
 
 .navhome {
     display: flex;
-    padding-left: 10%;
-    padding-right: 35%;
+    justify-content: center;
     font-family: 'DM Serif Display', serif;
     font-size: 20pt;
+    z-index: 1;
 }
 
 /* nav bar underline styling */
@@ -39,21 +52,23 @@ a,
 a:link,
 a:visited {
   text-decoration: none;
-  color: black;
+  color: rgb(247, 247, 239);
+  z-index: 1;
 }
 
 a:hover {
-    color:black;
-    text-decoration: black;
+    color:rgb(247, 247, 239);
+    text-decoration:rgb(247, 247, 239);
 }
 
 a:active {
-    text-decoration: black;
+    text-decoration:rgb(247, 247, 239);
 }
 
 span {
     position: relative;
     cursor: pointer;
+    z-index: 1;
 }
 
 span:before,
@@ -64,7 +79,7 @@ span:after {
     height: 1px;
     bottom: 0%;
     margin-top: -0.5px;
-    background: black;
+    background: rgb(247, 247, 239);
 }
 
 span:before {
@@ -73,12 +88,12 @@ span:before {
   
 span:after {
     right: 2.5px;
-    background: black;
+    background: rgb(247, 247, 239);
     transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
   
 span:hover:before {
-    background: black;
+    background: rgb(247, 247, 239);
     width: 100%;
     transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
@@ -93,9 +108,18 @@ span:hover:after {
 
 .hometitle {
     display: flex;
+    position: relative;
+    justify-content: center;
     font-family: 'DM Serif Display', serif;
-    font-size: 17rem;
-    padding-left: 3%;
-    padding-right: 3%;
-    display: inline-block;
+    font-size: 13rem;
+    color: rgb(247, 247, 239);
+    z-index: 1;
+}
+
+/* Homepage background image styling */
+#homebackgroundimg {
+    display:inline-block;
+    position: absolute;
+    max-width: 100%;
+    z-index: 0;
 }
