@@ -274,3 +274,20 @@ span:hover:after {
     width: 100%;
     transition: 0s;
 }
+
+/*Breeds/Projects page styles */
+
+.breeds a {
+    color:black;
+}
+
+/* Husky page styles */
+
+#huskybackgroundimg {
+    display:inline-block;
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}

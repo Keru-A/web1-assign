@@ -20,12 +20,18 @@ app.get('/', function(req, res) {
     res.render('pages/about');
   });
 
+  //contact page
   app.get('/contact', function(req, res) {
     res.render('pages/contact');
   });
-
+  
+  //breeds page
   app.get('/projects', function(req, res) {
     res.render('pages/projects');
+  });
+
+  app.get('/husky', function(req, res) {
+    res.render('pages/husky');
   });
 
 app.listen(PORT, () => {
