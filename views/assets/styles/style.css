@@ -123,3 +123,49 @@ span:hover:after {
     max-width: 100%;
     z-index: 0;
 }
+
+/* Home page styling */
+#homebottom {
+    display: flex;
+}
+
+#homesummary p {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    justify-content: space-around;
+    justify-self: left;
+    left: 3%;
+    bottom: 0%;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(247, 247, 239);
+    font-size: 1.75em;
+    font-weight: bold; 
+}
+
+#homecopyright h6 {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    justify-content: space-around;
+    justify-self: right;
+    right: 28%;
+    bottom: 0%;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(247, 247, 239);
+    font-size: 2em;
+    font-weight: bold; 
+}
+
+#homecopyright p {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    justify-content: space-around;
+    justify-self: right;
+    right: 5%;
+    bottom: 0%;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(247, 247, 239);
+    font-size: 1.75em;
+}
