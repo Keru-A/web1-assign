@@ -293,5 +293,11 @@ span:hover:after {
     z-index: 0;
 }
 
+#homelist {
+    display: flex;
+    z-index: 1;
+    position: absolute;
+}
+
 
 /* https://codepen.io/nxworld/pen/OyRrGy scroll down button */
