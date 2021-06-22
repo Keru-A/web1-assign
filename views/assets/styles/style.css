@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    overflow: hidden;
 }
 
 /* nav bar styling */
@@ -296,8 +295,22 @@ span:hover:after {
 #homelist {
     display: flex;
     z-index: 1;
-    position: absolute;
 }
 
+
+#homeleftp {
+    display: flex;
+    position:fixed;
+    z-index: 1;
+    bottom: 0%;
+    margin-top: 1000vh;
+}
+
+#homerightp {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    
+}
 
 /* https://codepen.io/nxworld/pen/OyRrGy scroll down button */
