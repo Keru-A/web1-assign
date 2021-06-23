@@ -108,19 +108,24 @@ span:hover:after {
 /* Homepage title styling */
 
 .hometitle {
-    display: flex;
-    position: relative;
-    justify-content: center;
     font-family: 'DM Serif Display', serif;
     font-size: 13rem;
     color: rgb(247, 247, 239);
     z-index: 1;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    justify-content: space-around;
+    justify-self: center;
+    left: 6%;
+    top: 5%;
+    font-weight: bold; 
 }
 
 /* Homepage background image styling */
 #homebackgroundimg {
-    display:inline-block;
-    position: absolute;
+    display: flex;
+    position: relative;
     object-fit: cover;
     width: 100%;
     height: 100vh;
@@ -294,22 +299,22 @@ span:hover:after {
 
 #homelist {
     display: flex;
-    z-index: 1;
 }
 
 
 #homeleftp {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
     display: flex;
-    position:fixed;
-    z-index: 1;
+    left: 15%;
     bottom: 0%;
-    margin-top: 1000vh;
 }
 
 #homerightp {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
     display: flex;
-    position: relative;
-    z-index: 1;
+    right: 15%;
     
 }
 
