@@ -446,7 +446,7 @@ body::-webkit-scrollbar {
 /* projects numbering font font-family: 'Italiana', serif; */
 
 /* home page project list */
-
+/* huskys */
 .breedone,
 .breedone:link,
 .breedone:visited{
@@ -454,6 +454,7 @@ body::-webkit-scrollbar {
     flex-direction: row;
     box-sizing: border-box;
     max-width: 30%;
+    max-height: 100vh;
     padding-top: 5%;
     padding-left: 10%;
     text-decoration: none;
@@ -490,8 +491,65 @@ body::-webkit-scrollbar {
 .breedonetitle p {
     font-family: 'Italiana', serif;
     color: black;
-    font-size: 50em;
+    font-size: 40em;
     margin: 0;
     padding-left: 40%;
-    padding-top: 2%;
+    padding-bottom: 20%;
+}
+
+/*german shepherds */
+.breedtwo,
+.breedtwo:link,
+.breedtwo:visited{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-self: right;
+    text-decoration: none;
+    max-width: 20%;
+
+    padding-top: 0%;
+}
+
+.breedtwoimg {
+    display: flex;
+    padding-left: 50%;
+}
+
+#breedtwoimgsrc {
+    display: flex;
+    position: relative;
+    max-width: auto;
+    max-height: 100vh;
+
+}
+
+
+.breedtwotitle h5 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'DM Serif Display', serif;
+    color: black;
+    font-size: 5em;
+    margin: 0;
+    font-weight: lighter;
+}
+
+.breedtwotitle h6 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 5em;
+    margin: 0;
+}
+
+.breedtwotitle p {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Italiana', serif;
+    color: black;
+    font-size: 50em;
+    margin: 0;
+    padding-bottom: 0;
 }
