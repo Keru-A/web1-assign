@@ -189,13 +189,16 @@ body::-webkit-scrollbar {
 /* Black navbar styling */
 .blacknavbar {
     display: flex;
+    width: 100%;
+    position: absolute;
     justify-content: space-between;
-    padding-top: 2rem;
+    top: 2%;
     z-index: 1;
 }
 
 .blacknava {
     display: flex;
+    justify-self: left;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20pt;
     color: black;
@@ -206,7 +209,7 @@ body::-webkit-scrollbar {
 
 .blacknavli {
     display: flex;
-    justify-items: right;
+    justify-self: right;
     padding-right: 5%;
     z-index: 1;
 }
@@ -214,7 +217,6 @@ body::-webkit-scrollbar {
 .blacknavitem {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     max-width: 5rem;
     min-width: 5rem;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -223,10 +225,11 @@ body::-webkit-scrollbar {
 
 .blacknavhome {
     display: flex;
-    justify-content: center;
+    justify-self: center;
     font-family: 'DM Serif Display', serif;
     font-size: 20pt;
     z-index: 1;
+    color:black;
 }
 
 /* nav bar underline styling */
@@ -304,6 +307,17 @@ body::-webkit-scrollbar {
     z-index: 0;
 }
 
+/* Shepherd page styles */
+
+#shepherdbackgroundimg {
+    display: flex;
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+
 /* /#homelist {
     display: flex;
 } */
@@ -334,8 +348,6 @@ body::-webkit-scrollbar {
     padding-right: 10%;
     margin-top: 0;
 }
-
-/* https://codepen.io/nxworld/pen/OyRrGy scroll down button */
 
 /* Footer styles */
 
