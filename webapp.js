@@ -34,6 +34,10 @@ app.get('/', function(req, res) {
     res.render('pages/husky');
   });
 
+  app.get('/shepherd', function(req, res) {
+    res.render('pages/shepherd');
+  });
+
 app.listen(PORT, () => {
     console.log(`Our app is running on port ${ PORT }`);
 });

@@ -54,33 +54,33 @@ body::-webkit-scrollbar {
     color: rgb(247, 247, 239);
 }
 
-/* nav bar underline styling */
+/* white nav bar underline styling */
 
-a,
-a:link,
-a:visited {
+.whitenav,
+.whitenav:link,
+.whitenav:visited {
   text-decoration: none;
   color: rgb(247, 247, 239);
   z-index: 1;
 }
 
-a:hover {
+.whitenav:hover {
     color:rgb(247, 247, 239);
     text-decoration:rgb(247, 247, 239);
 }
 
-a:active {
+.whitenav:active {
     text-decoration:rgb(247, 247, 239);
 }
 
-span {
+.underline {
     position: relative;
     cursor: pointer;
     z-index: 1;
 }
 
-span:before,
-span:after {
+.underline:before,
+.underline:after {
     content: '';
     position: absolute;
     width: 0%;
@@ -90,23 +90,23 @@ span:after {
     background: rgb(247, 247, 239);
 }
 
-span:before {
+.underline:before {
     left: -2.5px;
 }
   
-span:after {
+.underline:after {
     right: 2.5px;
     background: rgb(247, 247, 239);
     transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
   
-span:hover:before {
+.underline:hover:before {
     background: rgb(247, 247, 239);
     width: 100%;
     transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
   
-span:hover:after {
+.underline:hover:after {
     background: transparent;
     width: 100%;
     transition: 0s;
@@ -231,31 +231,31 @@ span:hover:after {
 
 /* nav bar underline styling */
 
-.blacknavbar a,
-.blacknavbar a:link,
-.blacknavbar a:visited {
+.blacknav,
+.blacknav:link,
+.blacknav:visited {
   text-decoration: none;
   color: black;
   z-index: 1;
 }
 
-.blacknavbar a:hover {
+.blacknav:hover {
     color:black;
     text-decoration:black;
 }
 
-.blacknavbar a:active {
+.blacknav:active {
     text-decoration: black;
 }
 
-.blacknavbar span {
+.blackunderline {
     position: relative;
     cursor: pointer;
     z-index: 1;
 }
 
-.blacknavbar span:before,
-.blacknavbar span:after {
+.blackunderline:before,
+.blackunderline:after {
     content: '';
     position: absolute;
     width: 0%;
@@ -265,23 +265,23 @@ span:hover:after {
     background: black;
 }
 
-.blacknavbar span:before {
+.blackunderline:before {
     left: -2.5px;
 }
   
-.blacknavbar span:after {
+.blackunderline:after {
     right: 2.5px;
     background: black;
     transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
   
-.blacknavbar span:hover:before {
+.blackunderline:hover:before {
     background: black;
     width: 100%;
     transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
   
-.blacknavbar span:hover:after {
+.blackunderline:hover:after {
     background: transparent;
     width: 100%;
     transition: 0s;
@@ -344,6 +344,8 @@ span:hover:after {
     flex-direction: row;
     justify-content: space-between;
     color: black;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .footer a,
@@ -427,4 +429,57 @@ span:hover:after {
     min-width: 5rem;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20pt;
+}
+
+/* projects numbering font font-family: 'Italiana', serif; */
+
+/* home page project list */
+
+.breedone,
+.breedone:link,
+.breedone:visited{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    max-width: 30%;
+    padding-top: 5%;
+    padding-left: 10%;
+    text-decoration: none;
+}
+
+.breedoneimg {
+    display: flex;
+}
+
+#breedoneimgsrc {
+    display: flex;
+    position: relative;
+    max-width: auto;
+    max-height: 100vh;
+}
+
+.breedonetitle h5 {
+    font-family: 'DM Serif Display', serif;
+    color: black;
+    font-size: 5em;
+    margin: 0;
+    font-weight: lighter;
+    padding-left: 5%;
+}
+
+.breedonetitle h6 {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 5em;
+    margin: 0;
+    padding-left: 5%;
+}
+
+.breedonetitle p {
+    font-family: 'Italiana', serif;
+    color: black;
+    font-size: 50em;
+    margin: 0;
+    padding-left: 40%;
+    padding-top: 2%;
 }

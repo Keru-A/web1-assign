@@ -23,22 +23,24 @@ fetch ('https://api.unsplash.com/photos/54jiFcnouyw?client_id=I3qdnpZXWiIkcwPOmv
             img.src = (data.urls.raw);
         })
 
+fetch ('https://api.unsplash.com/photos/NKN25UfGfkQ?client_id=I3qdnpZXWiIkcwPOmvVcZ9yWwdepIH36eEonzKTA3ug')
+    .then(res => {
+        return res.json();
+    })
+        
+    .then(data => {
+            console.log(data.urls.raw);
+            let img = document.getElementById("breedoneimgsrc");
+             img.src = (data.urls.raw);
+        })
 
-
-        $(function () {
-            $(".navhome").on("click", function (ev) {
-                ev.preventDefault();
-                $(".content_div").animate({
-                    "margin-left": $(".content_div").width() + 100
-                }).promise().done(function () {
-                    $(".content_div").load("/three", function () {
-                        $(".content_div").css({
-                            "margin-left": -1000
-                        });
-                        $(".content_div").animate({
-                            "margin-left": 0
-                        });
-                    });
-                });
-            });
-        });
+fetch ('https://api.unsplash.com/photos/tBY61CbBJg8?client_id=I3qdnpZXWiIkcwPOmvVcZ9yWwdepIH36eEonzKTA3ug')
+    .then(res => {
+        return res.json();
+    })
+    
+    .then(data => {
+            console.log(data.urls.raw);
+            let img = document.getElementById("shepherdbackgroundimg");
+            img.src = (data.urls.raw);
+        })
