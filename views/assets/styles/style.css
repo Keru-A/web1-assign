@@ -332,3 +332,95 @@ span:hover:after {
 }
 
 /* https://codepen.io/nxworld/pen/OyRrGy scroll down button */
+
+/* Footer styles */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: black;
+}
+
+.footer a,
+.footer a:link,
+.footer a:visited {
+  text-decoration: none;
+  color: black;
+  z-index: 1;
+}
+
+.footer a:hover {
+    color:black;
+    text-decoration:black;
+}
+
+.footer a:active {
+    text-decoration:black;
+}
+
+.footer span {
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.footer span:before,
+.footer span:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: 0%;
+    margin-top: -0.5px;
+    background: black;
+}
+
+.footer span:before {
+    left: -2.5px;
+}
+  
+.footer span:after {
+    right: 2.5px;
+    background: black;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+  
+.footer span:hover:before {
+    background: black;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+  
+.footer span:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+}
+
+.sitemapitem {
+    display: flex;
+    color: black;
+    flex-direction: row;
+    max-width: 5rem;
+    min-width: 5rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20pt;
+}
+
+.footer h6{
+    font-family: 'DM Serif Display', serif;
+    color: black;
+    font-size: 20pt;
+    margin: 0;
+}
+
+.linksitem {
+    display: flex;
+    color: black;
+    flex-direction: row;
+    max-width: 5rem;
+    min-width: 5rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20pt;
+}
