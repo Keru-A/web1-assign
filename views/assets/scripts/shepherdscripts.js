@@ -9,3 +9,10 @@ fetch ('https://api.unsplash.com/photos/tBY61CbBJg8?client_id=I3qdnpZXWiIkcwPOmv
             let img = document.getElementById("shepherdbackgroundimg");
             img.src = (data.urls.raw);
         })
+
+topButton = document.getElementById("topbutton");
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

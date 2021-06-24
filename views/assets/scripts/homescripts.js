@@ -43,8 +43,7 @@ fetch ('https://api.unsplash.com/photos/Ce2FZDbx2T0?client_id=I3qdnpZXWiIkcwPOmv
 //Scroll to Top button
 topButton = document.getElementById("topbutton");
 
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }

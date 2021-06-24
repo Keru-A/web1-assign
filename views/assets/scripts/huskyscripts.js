@@ -9,3 +9,11 @@ fetch ('https://api.unsplash.com/photos/54jiFcnouyw?client_id=I3qdnpZXWiIkcwPOmv
             let img = document.getElementById("huskybackgroundimg");
             img.src = (data.urls.raw);
         })
+
+topButton = document.getElementById("topbutton");
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
