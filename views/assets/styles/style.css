@@ -39,8 +39,9 @@ body::-webkit-scrollbar {
 .navitem {
     display: flex;
     flex-direction: row;
-    max-width: 5rem;
-    min-width: 5rem;
+    justify-content: space-evenly;
+    max-width: 6rem;
+    min-width: 6rem;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20pt;
 }
@@ -217,8 +218,9 @@ body::-webkit-scrollbar {
 .blacknavitem {
     display: flex;
     flex-direction: row;
-    max-width: 5rem;
-    min-width: 5rem;
+    justify-content: space-evenly;
+    max-width: 6rem;
+    min-width: 6rem;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20pt;
 }
@@ -296,6 +298,14 @@ body::-webkit-scrollbar {
     color:black;
 }
 
+.huskylink {
+    display: none;
+}
+
+.huskylinkhover:hover .huskylink {
+    display: block;
+}
+
 /* Husky page styles */
 
 #huskybackgroundimg {
@@ -354,9 +364,9 @@ body::-webkit-scrollbar {
 .footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     color: black;
-    padding-top: 2%;
+    padding-top: 5%;
     padding-bottom: 2%;
 }
 
@@ -443,7 +453,20 @@ body::-webkit-scrollbar {
     font-size: 20pt;
 }
 
-/* projects numbering font font-family: 'Italiana', serif; */
+#topbutton {
+
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: black; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    width: 130%;
+    font-size: 30px; /* Increase font size */
+    margin-top: 10%;
+}
 
 /* home page project list */
 /* huskys */
@@ -455,8 +478,8 @@ body::-webkit-scrollbar {
     box-sizing: border-box;
     max-width: 30%;
     max-height: 100vh;
-    padding-top: 5%;
-    padding-left: 10%;
+    margin-top: 5%;
+    margin-left: 10%;
     text-decoration: none;
 }
 
@@ -488,15 +511,6 @@ body::-webkit-scrollbar {
     padding-left: 5%;
 }
 
-.breedonetitle p {
-    font-family: 'Italiana', serif;
-    color: black;
-    font-size: 40em;
-    margin: 0;
-    padding-left: 40%;
-    padding-bottom: 20%;
-}
-
 /*german shepherds */
 .breedtwo,
 .breedtwo:link,
@@ -507,13 +521,12 @@ body::-webkit-scrollbar {
     justify-self: right;
     text-decoration: none;
     max-width: 20%;
-
     padding-top: 0%;
+    margin-left: 50%;
 }
 
 .breedtwoimg {
     display: flex;
-    padding-left: 50%;
 }
 
 #breedtwoimgsrc {
@@ -524,14 +537,14 @@ body::-webkit-scrollbar {
 
 }
 
-
 .breedtwotitle h5 {
     display: flex;
     flex-direction: column;
     font-family: 'DM Serif Display', serif;
     color: black;
-    font-size: 5em;
+    font-size: 3em;
     margin: 0;
+    padding-left: 10%;
     font-weight: lighter;
 }
 
@@ -540,16 +553,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     font-family: 'Open Sans', sans-serif;
     color: black;
-    font-size: 5em;
+    font-size: 3em;
     margin: 0;
-}
-
-.breedtwotitle p {
-    display: flex;
-    flex-direction: row;
-    font-family: 'Italiana', serif;
-    color: black;
-    font-size: 50em;
-    margin: 0;
-    padding-bottom: 0;
+    padding-left: 10%;
 }
