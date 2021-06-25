@@ -292,20 +292,6 @@ body::-webkit-scrollbar {
     transition: 0s;
 }
 
-/*Breeds/Projects page styles */
-
-.breeds a {
-    color:black;
-}
-
-.huskylink {
-    display: none;
-}
-
-.huskylinkhover:hover .huskylink {
-    display: block;
-}
-
 /* Husky page styles */
 
 #huskybackgroundimg {
@@ -317,6 +303,52 @@ body::-webkit-scrollbar {
     z-index: 0;
 }
 
+.stickyscroll {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+}
+
+#stickynumber {
+    font-family: 'Italiana', serif;
+    font-size: 50vw;
+    line-height: 35vw;
+    margin-bottom: 5%;
+}
+.stickynoscroll {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+#stickyheader {
+    font-family: 'DM Serif Display', serif;
+    font-size: 4em;
+    max-width: 60%;
+}
+
+#stickybody {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    max-width: 70%;
+}
+
+#huskywideimg {
+    display: flex;
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#huskyblurbimg {
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 50%;
+}
 /* Shepherd page styles */
 
 #shepherdbackgroundimg {
@@ -326,6 +358,21 @@ body::-webkit-scrollbar {
     width: 100%;
     height: 100vh;
     z-index: 0;
+}
+
+#shepherdwideimg {
+    display: flex;
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#shepherdblurbimg {
+    display: flex;
+    position: relative;
+    width: 40%;
+    height: 50%;
 }
 
 /* /#homelist {
@@ -454,17 +501,15 @@ body::-webkit-scrollbar {
 }
 
 #topbutton {
-
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: black; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 50%; /* Rounded corners */
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
     width: 130%;
-    font-size: 30px; /* Increase font size */
+    font-size: 30px;
     margin-top: 10%;
 }
 
@@ -557,4 +602,5 @@ body::-webkit-scrollbar {
     margin: 0;
     padding-left: 10%;
 }
+
 
