@@ -15,11 +15,6 @@ app.get('/', function(req, res) {
     res.render('pages/index');
   });
   
-  //contact page
-  app.get('/contact', function(req, res) {
-    res.render('pages/contact');
-  });
-  
   app.get('/husky', function(req, res) {
     res.render('pages/husky');
   });
