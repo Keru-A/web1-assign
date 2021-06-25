@@ -341,13 +341,49 @@ body::-webkit-scrollbar {
     object-fit: cover;
     width: 100%;
     height: 100vh;
+    margin-bottom: 15%;
 }
 
-#huskyblurbimg {
+.huskyblurbcontain {
     display: flex;
-    position: relative;
-    width: 50%;
-    height: 50%;
+    flex-direction: row;
+}
+
+.huskyblurbimage {
+    width: 150%;
+    margin-left: 5%;
+}
+
+#huskyblurbimg{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+}
+
+.huskyblurb {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.huskyblurb h5 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'DM Serif Display', serif;
+    font-size: 4em;
+    margin-top: 0;
+    margin-bottom: 5%;
+    margin-right: 0;
+}
+
+.huskyblurb h6 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    margin-right: 0;
 }
 /* Shepherd page styles */
 
@@ -366,13 +402,47 @@ body::-webkit-scrollbar {
     object-fit: cover;
     width: 100%;
     height: 100vh;
+    margin-bottom: 15%;
+}
+
+.shepherdblurbcontain {
+    display: flex;
+    flex-direction: row;
+}
+
+.shepherdblurbimage {
+    width: 45%;
+    margin-left: 5%;
 }
 
 #shepherdblurbimg {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+}
+
+.shepherdblurb {
     display: flex;
-    position: relative;
-    width: 40%;
-    height: 50%;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.shepherdblurb h5 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'DM Serif Display', serif;
+    font-size: 4em;
+
+}
+
+.shepherdblurb h6 {
+    display: flex;
+    flex-direction: coloumn;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+
 }
 
 /* /#homelist {

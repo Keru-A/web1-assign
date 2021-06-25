@@ -23,7 +23,7 @@ fetch ('https://api.unsplash.com/photos/lOLywaWn8VY?client_id=I3qdnpZXWiIkcwPOmv
         })
 
 //fetch image for shepherd blurb
-fetch ('https://api.unsplash.com/photos/Y9XRyobtsBI?client_id=I3qdnpZXWiIkcwPOmvVcZ9yWwdepIH36eEonzKTA3ug')
+fetch ('https://api.unsplash.com/photos/lfy5UQnAJUE?client_id=I3qdnpZXWiIkcwPOmvVcZ9yWwdepIH36eEonzKTA3ug')
     .then(res => {
         return res.json();
     })
